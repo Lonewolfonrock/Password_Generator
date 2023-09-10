@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 23px;
+}
+.main{
+    background-color: #1F2937;
+    width: 60%;
+    margin: 100px auto;
+    
+}
+.sub-main{
+    text-align: center;
+    padding: 30px 100px;
+    padding-bottom: 100px;
+}
+h1{
+    margin-top: 30px;
+}
+h1,#text,.generate-section{
+    margin-bottom: 20px;
+}
+h1{color: #55F991;}
+#text{
+    color: white;
+}
+#passwordLength{
+    width: 100px;
+}
+.Recomendation{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+#p1,#p2,#p3,#p4{
+    background-color: white;
+    margin: 15px 10px;
+    padding: 7px  100px;
+    border-radius: 8px;
+    background-color: #273549;
+    color: #55F991;
+    
+}
+hr{
+    margin: 20px auto;
+}
+button{
+    background-color: #55F991;
+    padding: 8px 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    
+}
+button:hover{
+    
+    cursor: pointer;
+}
+#passwordLength {
+    width: 100px;
+    padding: 6px;
+    margin: 10px 0;
+    border: 2px solid #1F2937;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+#passwordLength::placeholder {
+    color: #888;
+    font-size: 10px;
+}
+
+#passwordLength:valid {
+    border-color: green;
+}
+
+#passwordLength:invalid {
+    border-color: red;
+}
+
+
+@media (max-width:1108px){
+    body{
+        font-size: 16px;
+        
+    }
+    .main{
+        width: 90%;
+        margin: 50px auto;
+        padding: 10px;
+    }
+    .sub-main{
+        padding: 30px;
+    }
+    #p1,#p2,#p3,#p4{
+        background-color: white;
+        margin: 15px 10px;
+        padding: 3px  70px;
+        border-radius: 8px;
+        background-color: #273549;
+        
+    }
+}
