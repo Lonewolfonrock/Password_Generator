@@ -1,6 +1,6 @@
 
 
-let length
+let length=8;
 let mixedArray = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
                  'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 
                  'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 
@@ -15,6 +15,8 @@ function generatedRandom(){
     let newarr3="";
     let newarr4="";
     length = document.getElementById("passwordLength").value
+
+    
     if(length<=19){
         
     for(let i=0; i<length; i++){
@@ -28,6 +30,7 @@ function generatedRandom(){
     document.querySelector("#p3").textContent=newarr3;
     document.querySelector("#p4").textContent=newarr4;
     }
+
     else{
         document.querySelector("#p1").textContent="You need to buy premium subscription😀😀😀"
     document.querySelector("#p2").textContent="You need to buy premium subscription🥺🥺🥺"
