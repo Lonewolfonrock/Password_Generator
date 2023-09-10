@@ -1,6 +1,6 @@
 
 
-let length=8;
+let length=0;
 let mixedArray = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
                  'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 
                  'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 
@@ -15,9 +15,24 @@ function generatedRandom(){
     let newarr3="";
     let newarr4="";
     length = document.getElementById("passwordLength").value
+    if(length<=0 || length <8){
+        length=8;
+        for(let i=0; i<length; i++){
+            newarr1+=mixedArray[Math.floor((Math.random())*mixedArray.length)]
+            newarr2+=mixedArray[Math.floor((Math.random())*mixedArray.length)]
+            newarr3+=mixedArray[Math.floor((Math.random())*mixedArray.length)]
+            newarr4+=mixedArray[Math.floor((Math.random())*mixedArray.length)]
+        }
+        document.querySelector("#p1").textContent=newarr1;
+        document.querySelector("#p2").textContent=newarr2;
+        document.querySelector("#p3").textContent=newarr3;
+        document.querySelector("#p4").textContent=newarr4;
 
+        alert("You cant generate password less than eight digit so we generated automatic")
+        
+    }
     
-    if(length<=19){
+    else if(length<=19){
         
     for(let i=0; i<length; i++){
         newarr1+=mixedArray[Math.floor((Math.random())*mixedArray.length)]
